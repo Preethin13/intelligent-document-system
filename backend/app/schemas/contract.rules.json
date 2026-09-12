@@ -1,0 +1,7 @@
+{
+  "required": ["title", "effective_date"],
+  "date_fields": ["effective_date", "expiration_date"],
+  "date_order": [["effective_date", "expiration_date"]],
+  "min_array_length": [{ "field": "parties", "min": 2, "message": "Contract should name at least two parties" }],
+  "confidence_fields": ["title", "effective_date"]
+}

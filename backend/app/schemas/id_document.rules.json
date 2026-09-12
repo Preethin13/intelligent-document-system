@@ -1,0 +1,15 @@
+{
+  "required": ["id_type", "full_name", "document_number"],
+  "date_fields": ["date_of_birth", "issue_date", "expiry_date"],
+  "date_order": [["issue_date", "expiry_date"]],
+  "expiry_future": ["expiry_date"],
+  "patterns": [
+    {
+      "field": "document_number",
+      "when": { "id_type": "passport" },
+      "regex": "^[A-Z0-9]{5,12}$",
+      "message": "Passport numbers are typically 5–12 alphanumeric characters"
+    }
+  ],
+  "confidence_fields": ["full_name", "document_number", "id_type"]
+}

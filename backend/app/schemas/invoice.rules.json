@@ -1,0 +1,9 @@
+{
+  "required": ["vendor_name", "invoice_number", "invoice_date", "total"],
+  "currency_field": "currency",
+  "non_negative": ["subtotal", "tax", "total"],
+  "totals": { "parts": ["subtotal", "tax"], "total": "total", "tolerance": 0.05 },
+  "date_fields": ["invoice_date", "due_date"],
+  "date_order": [["invoice_date", "due_date"]],
+  "confidence_fields": ["vendor_name", "invoice_number", "invoice_date", "total"]
+}

@@ -1,0 +1,5 @@
+{
+  "required": ["summary"],
+  "min_array_length": [{ "field": "fields", "min": 1, "message": "Add at least one extracted key/value" }],
+  "confidence_fields": ["summary"]
+}

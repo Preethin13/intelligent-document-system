@@ -1,0 +1,8 @@
+{
+  "required": ["merchant", "total"],
+  "currency_field": "currency",
+  "non_negative": ["subtotal", "tax", "total"],
+  "totals": { "parts": ["subtotal", "tax"], "total": "total", "tolerance": 0.05 },
+  "date_fields": ["datetime"],
+  "confidence_fields": ["merchant", "datetime", "total"]
+}
